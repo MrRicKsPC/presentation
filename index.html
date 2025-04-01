@@ -14,7 +14,12 @@
     <button onclick="convertToHTML()">Convert to HTML and Download</button>
     <p>Image Picker:</p>
     <input type="file" name="image" accept="image/*">
-    
+
+    <script>
+        document.addEventListener('gesturestart', function(e) { e.preventDefault(); document.body.style.zoom = 0.99; });
+        document.addEventListener('gesturechange', function(e) { e.preventDefault(); document.body.style.zoom = 0.99; });
+        document.addEventListener('gestureend', function(e) { e.preventDefault(); document.body.style.zoom = 0.99; });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
